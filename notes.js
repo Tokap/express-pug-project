@@ -69,3 +69,8 @@
 // extends ./layout.pug for the item extending the layout
 // block content in the layout the declare where the template is going
 // block content on the second line of the template file so it defines what is going in
+
+// STATIC SERVER FOR OUR STYLE / JS
+// app.use() //configures middleware
+// middleware handles logic after request, but before reception by server (hence "middle")
+// can be used for authentication or for serving up static files

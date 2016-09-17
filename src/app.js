@@ -5,6 +5,9 @@ const express = require('express'),
 
 let app = express();
 
+app.use('/static', express.static(__dirname + '/public'));
+// the static statements adds that as a leading directory
+
 app.set('view engine', 'pug');
 app.set('views', __dirname + '/templates'); //sets the path relative to the file rather than launch point
 
