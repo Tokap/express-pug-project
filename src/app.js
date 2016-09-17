@@ -10,10 +10,15 @@ app.get('/', (req, res) => {
 });
 //function takes (location parameter, annonymous callback function)
 
-app.get('/blog/:title', (req, res) => {
+app.get('/blog/:title?', (req, res) => {
   const title = req.params.title;
-  const post = posts[title];
-  res.send(post);
+  if (title === undefined) {
+    res.status(503);
+    res.send("This page is under construction")
+  } else {
+    const post = posts[title];
+    res.send(post);
+  }
 });
 
 app.listen(3000, () =>{

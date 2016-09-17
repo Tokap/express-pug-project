@@ -32,3 +32,21 @@
 //EXPRESS:
 //request object has extensive docs available through API docs
 // req object has useful things like .hostname, .url, .route, .method, .params
+
+
+//A question mark at the end of a parameter tells express it's optional:
+// www.example.com/blog/:id?
+
+// GOOD TO HAVE LINKS:
+
+// HTTP Responses: http://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+// Express documentation for the response object: http://expressjs.com/api.html#res
+// Detect device type or “bot” through the request object: https://github.com/rguerreiro/express-device
+
+
+
+////////////// PUG TEMPLATES ///////////////////
+//A template lives on the sever and acts as a skeleton for the page
+
+
+// npm install pug
