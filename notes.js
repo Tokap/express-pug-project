@@ -43,6 +43,10 @@
 // Express documentation for the response object: http://expressjs.com/api.html#res
 // Detect device type or “bot” through the request object: https://github.com/rguerreiro/express-device
 
+// The app.use method: http://expressjs.com/4x/api.html#app.use
+// Express’s Static Middleware: http://expressjs.com/4x/api.html#express.static
+// From the express docs: “An Express application is essentially a series of middleware calls.”
+
 // In node.js, `__dirname` is a variable that gives you the path to the current file
 
 ////////////// PUG TEMPLATES ///////////////////
