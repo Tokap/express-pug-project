@@ -1,16 +1,17 @@
 'use strict';
 
-const express = require('express');
+const express = require('express'),
+        posts = require('./mock/posts.json');
 
 let app = express();
 
 app.get('/', (req, res) => {
-  res.send("<h1>I love learning!</h1>")
+  res.send("<h1>I love Beets!</h1>")
 });
 //function takes (location parameter, annonymous callback function)
 
 app.get('/blog', (req, res) => {
-
+  res.send(posts);
 });
 
 app.listen(3000, () =>{
