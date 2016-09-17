@@ -58,3 +58,10 @@
 
 
 // If a tag is not explicity defined in Pug, it is assumed to be a Div.
+
+// Keep a file to at max 150 lines where possible.
+
+// When extracting templates into pieces:
+// extends ./layout.pug for the item extending the layout
+// block content in the layout the declare where the template is going
+// block content on the second line of the template file so it defines what is going in
