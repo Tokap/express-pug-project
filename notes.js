@@ -27,4 +27,8 @@
 // If you want to use inline breaks, need to load nodemon as:
 // nodemon --debug-brk src/app
 // The above command auto-stops the process on the first line. We do this because
-// the break statements wont work otherwise because the page loads too fast. 
+// the break statements wont work otherwise because the page loads too fast.
+
+//EXPRESS:
+//request object has extensive docs available through API docs
+// req object has useful things like .hostname, .url, .route, .method, .params

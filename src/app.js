@@ -10,8 +10,10 @@ app.get('/', (req, res) => {
 });
 //function takes (location parameter, annonymous callback function)
 
-app.get('/blog', (req, res) => {
-  res.send(posts);
+app.get('/blog/:title', (req, res) => {
+  const title = req.params.title;
+  const post = posts[title];
+  res.send(post);
 });
 
 app.listen(3000, () =>{
