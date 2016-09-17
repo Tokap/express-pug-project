@@ -43,7 +43,7 @@
 // Express documentation for the response object: http://expressjs.com/api.html#res
 // Detect device type or “bot” through the request object: https://github.com/rguerreiro/express-device
 
-
+// In node.js, `__dirname` is a variable that gives you the path to the current file
 
 ////////////// PUG TEMPLATES ///////////////////
 //A template lives on the sever and acts as a skeleton for the page
@@ -55,3 +55,6 @@
 //SET THE BELOW IN THE APP TO TELL IT HOW TO HANDLE TEMPLATES:
 // app.set('view engine', 'pug');
 // app.set('views', __dirname + '/templates'); //sets the path relative to the file rather than launch point
+
+
+// If a tag is not explicity defined in Pug, it is assumed to be a Div.

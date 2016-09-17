@@ -19,8 +19,9 @@ app.get('/blog/:title?', (req, res) => {
     res.status(503);
     res.send("This page is under construction")
   } else {
-    const post = posts[title];
-    res.send(post);
+    const post = posts[title] || {};
+    // The 'or' statement above here is a cheap way of avoiding writing explicit error handling. Use sparingly.
+    res.render('post', { post: post});
   }
 });
 
