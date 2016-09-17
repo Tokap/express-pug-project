@@ -5,8 +5,11 @@ const express = require('express'),
 
 let app = express();
 
+app.set('view engine', 'pug');
+app.set('views', __dirname + '/templates'); //sets the path relative to the file rather than launch point
+
 app.get('/', (req, res) => {
-  res.send("<h1>I love Beets!</h1>")
+  res.render('index')
 });
 //function takes (location parameter, annonymous callback function)
 

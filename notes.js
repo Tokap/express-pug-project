@@ -50,3 +50,8 @@
 
 
 // npm install pug
+// Express knows to grab templates from templates folder in src
+
+//SET THE BELOW IN THE APP TO TELL IT HOW TO HANDLE TEMPLATES:
+// app.set('view engine', 'pug');
+// app.set('views', __dirname + '/templates'); //sets the path relative to the file rather than launch point
